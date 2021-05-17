@@ -24,6 +24,7 @@
 		DE868CA726525C5E00760514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE868CAA26525C5E00760514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE868CAC26525C5E00760514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE868CB326526D5B00760514 /* iOSJenkinsDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSJenkinsDebug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		DE868C9D26525C5B00760514 /* iOSJenkins */ = {
 			isa = PBXGroup;
 			children = (
+				DE868CB326526D5B00760514 /* iOSJenkinsDebug.entitlements */,
 				DE868C9E26525C5B00760514 /* AppDelegate.swift */,
 				DE868CA026525C5B00760514 /* SceneDelegate.swift */,
 				DE868CA226525C5B00760514 /* ViewController.swift */,
@@ -286,6 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSJenkins/iOSJenkinsDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4S5KQJJMSM;
 				INFOPLIST_FILE = iOSJenkins/Info.plist;
