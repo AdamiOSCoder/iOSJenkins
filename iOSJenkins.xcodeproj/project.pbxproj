@@ -13,7 +13,26 @@
 		DE868CA626525C5B00760514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE868CA426525C5B00760514 /* Main.storyboard */; };
 		DE868CA826525C5E00760514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE868CA726525C5E00760514 /* Assets.xcassets */; };
 		DE868CAB26525C5E00760514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE868CA926525C5E00760514 /* LaunchScreen.storyboard */; };
+		DE868CBB2653643C00760514 /* iOSJenkinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE868CBA2653643C00760514 /* iOSJenkinsUITests.swift */; };
+		DE868D0C2653654900760514 /* iOSJenkinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE868D0B2653654900760514 /* iOSJenkinsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE868CBD2653643C00760514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE868C9326525C5B00760514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE868C9A26525C5B00760514;
+			remoteInfo = iOSJenkins;
+		};
+		DE868D0E2653654900760514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE868C9326525C5B00760514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE868C9A26525C5B00760514;
+			remoteInfo = iOSJenkins;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DE868C9B26525C5B00760514 /* iOSJenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSJenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +44,30 @@
 		DE868CAA26525C5E00760514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE868CAC26525C5E00760514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE868CB326526D5B00760514 /* iOSJenkinsDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSJenkinsDebug.entitlements; sourceTree = "<group>"; };
+		DE868CB82653643C00760514 /* iOSJenkinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSJenkinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE868CBA2653643C00760514 /* iOSJenkinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSJenkinsUITests.swift; sourceTree = "<group>"; };
+		DE868CBC2653643C00760514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE868D092653654900760514 /* iOSJenkinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSJenkinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE868D0B2653654900760514 /* iOSJenkinsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSJenkinsTests.swift; sourceTree = "<group>"; };
+		DE868D0D2653654900760514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DE868C9826525C5B00760514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE868CB52653643C00760514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE868D062653654900760514 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				DE868C9D26525C5B00760514 /* iOSJenkins */,
+				DE868CB92653643C00760514 /* iOSJenkinsUITests */,
+				DE868D0A2653654900760514 /* iOSJenkinsTests */,
 				DE868C9C26525C5B00760514 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				DE868C9B26525C5B00760514 /* iOSJenkins.app */,
+				DE868CB82653643C00760514 /* iOSJenkinsUITests.xctest */,
+				DE868D092653654900760514 /* iOSJenkinsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +110,24 @@
 				DE868CAC26525C5E00760514 /* Info.plist */,
 			);
 			path = iOSJenkins;
+			sourceTree = "<group>";
+		};
+		DE868CB92653643C00760514 /* iOSJenkinsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE868CBA2653643C00760514 /* iOSJenkinsUITests.swift */,
+				DE868CBC2653643C00760514 /* Info.plist */,
+			);
+			path = iOSJenkinsUITests;
+			sourceTree = "<group>";
+		};
+		DE868D0A2653654900760514 /* iOSJenkinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE868D0B2653654900760514 /* iOSJenkinsTests.swift */,
+				DE868D0D2653654900760514 /* Info.plist */,
+			);
+			path = iOSJenkinsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +150,42 @@
 			productReference = DE868C9B26525C5B00760514 /* iOSJenkins.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DE868CB72653643C00760514 /* iOSJenkinsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE868CBF2653643C00760514 /* Build configuration list for PBXNativeTarget "iOSJenkinsUITests" */;
+			buildPhases = (
+				DE868CB42653643C00760514 /* Sources */,
+				DE868CB52653643C00760514 /* Frameworks */,
+				DE868CB62653643C00760514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE868CBE2653643C00760514 /* PBXTargetDependency */,
+			);
+			name = iOSJenkinsUITests;
+			productName = iOSJenkinsUITests;
+			productReference = DE868CB82653643C00760514 /* iOSJenkinsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DE868D082653654900760514 /* iOSJenkinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE868D122653654900760514 /* Build configuration list for PBXNativeTarget "iOSJenkinsTests" */;
+			buildPhases = (
+				DE868D052653654900760514 /* Sources */,
+				DE868D062653654900760514 /* Frameworks */,
+				DE868D072653654900760514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE868D0F2653654900760514 /* PBXTargetDependency */,
+			);
+			name = iOSJenkinsTests;
+			productName = iOSJenkinsTests;
+			productReference = DE868D092653654900760514 /* iOSJenkinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +197,14 @@
 				TargetAttributes = {
 					DE868C9A26525C5B00760514 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					DE868CB72653643C00760514 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DE868C9A26525C5B00760514;
+					};
+					DE868D082653654900760514 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DE868C9A26525C5B00760514;
 					};
 				};
 			};
@@ -117,6 +222,8 @@
 			projectRoot = "";
 			targets = (
 				DE868C9A26525C5B00760514 /* iOSJenkins */,
+				DE868CB72653643C00760514 /* iOSJenkinsUITests */,
+				DE868D082653654900760514 /* iOSJenkinsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +236,20 @@
 				DE868CAB26525C5E00760514 /* LaunchScreen.storyboard in Resources */,
 				DE868CA826525C5E00760514 /* Assets.xcassets in Resources */,
 				DE868CA626525C5B00760514 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE868CB62653643C00760514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE868D072653654900760514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +266,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE868CB42653643C00760514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE868CBB2653643C00760514 /* iOSJenkinsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE868D052653654900760514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE868D0C2653654900760514 /* iOSJenkinsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE868CBE2653643C00760514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE868C9A26525C5B00760514 /* iOSJenkins */;
+			targetProxy = DE868CBD2653643C00760514 /* PBXContainerItemProxy */;
+		};
+		DE868D0F2653654900760514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE868C9A26525C5B00760514 /* iOSJenkins */;
+			targetProxy = DE868D0E2653654900760514 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DE868CA426525C5B00760514 /* Main.storyboard */ = {
@@ -322,6 +472,81 @@
 			};
 			name = Release;
 		};
+		DE868CC02653643C00760514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S5KQJJMSM;
+				INFOPLIST_FILE = iOSJenkinsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.iOSJenkinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSJenkins;
+			};
+			name = Debug;
+		};
+		DE868CC12653643C00760514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSJenkinsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.iOSJenkinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSJenkins;
+			};
+			name = Release;
+		};
+		DE868D102653654900760514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSJenkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.iOSJenkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSJenkins.app/iOSJenkins";
+			};
+			name = Debug;
+		};
+		DE868D112653654900760514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSJenkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.iOSJenkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSJenkins.app/iOSJenkins";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +564,24 @@
 			buildConfigurations = (
 				DE868CB026525C5E00760514 /* Debug */,
 				DE868CB126525C5E00760514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE868CBF2653643C00760514 /* Build configuration list for PBXNativeTarget "iOSJenkinsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE868CC02653643C00760514 /* Debug */,
+				DE868CC12653643C00760514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE868D122653654900760514 /* Build configuration list for PBXNativeTarget "iOSJenkinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE868D102653654900760514 /* Debug */,
+				DE868D112653654900760514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
