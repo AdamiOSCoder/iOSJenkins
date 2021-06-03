@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button1Click(_ sender: Any) {
-        let alertView = UIAlertController.init(title: "テストbutton1", message: "ばか", preferredStyle: .alert)
+        let alertView = UIAlertController.init(title: "テストbutton1", message: "aaaa", preferredStyle: .alert)
            let alert = UIAlertAction.init(title: "ok", style: .destructive) { (UIAlertAction) in
             print("ok")
            }
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button2Click(_ sender: Any) {
-        let alertView = UIAlertController.init(title: "テストbutton2", message: "ばか", preferredStyle: .alert)
+        let alertView = UIAlertController.init(title: "テストbutton2", message: "aaaa", preferredStyle: .alert)
            let alert = UIAlertAction.init(title: "ok", style: .destructive) { (UIAlertAction) in
             print("ok")
            }
