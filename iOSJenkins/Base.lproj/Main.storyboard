@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acq-WB-1Ea">
+                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acq-WB-1Ea">
                                 <rect key="frame" x="182.5" y="218" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouj-eg-Bac">
@@ -50,10 +50,14 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-f9-CNY">
+                                <rect key="frame" x="0.0" y="667" width="414" height="216"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Arw-Qz-xii"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hyj-f9-CNY" firstAttribute="trailing" secondItem="Arw-Qz-xii" secondAttribute="trailing" id="2RW-kZ-Qs1"/>
                             <constraint firstItem="LX2-tr-vnl" firstAttribute="centerX" secondItem="lrT-pp-gMf" secondAttribute="centerX" id="85T-pd-WLa"/>
                             <constraint firstItem="ouj-eg-Bac" firstAttribute="centerX" secondItem="lrT-pp-gMf" secondAttribute="centerX" id="9Pz-Id-0qe"/>
                             <constraint firstItem="Arw-Qz-xii" firstAttribute="trailing" secondItem="we0-QS-sLi" secondAttribute="trailing" constant="20" id="9xS-KC-JEq"/>
@@ -68,6 +72,7 @@
                             <constraint firstItem="we0-QS-sLi" firstAttribute="leading" secondItem="Arw-Qz-xii" secondAttribute="leading" constant="20" id="PnQ-NA-fcs"/>
                             <constraint firstItem="1fU-7j-v5k" firstAttribute="top" secondItem="ouj-eg-Bac" secondAttribute="bottom" constant="20" id="Q7c-iU-mEK"/>
                             <constraint firstItem="ouj-eg-Bac" firstAttribute="top" secondItem="acq-WB-1Ea" secondAttribute="bottom" constant="30" id="QAb-jK-tCw"/>
+                            <constraint firstItem="hyj-f9-CNY" firstAttribute="top" secondItem="WaH-IJ-rBE" secondAttribute="bottom" constant="20" id="SOk-3c-pHg"/>
                             <constraint firstItem="1fU-7j-v5k" firstAttribute="centerX" secondItem="lrT-pp-gMf" secondAttribute="centerX" id="VUC-i3-dhh"/>
                             <constraint firstItem="acq-WB-1Ea" firstAttribute="centerX" secondItem="lrT-pp-gMf" secondAttribute="centerX" id="cSj-b2-sV9"/>
                             <constraint firstItem="LX2-tr-vnl" firstAttribute="leading" secondItem="Arw-Qz-xii" secondAttribute="leading" id="hqf-nO-Azy"/>
@@ -75,13 +80,19 @@
                             <constraint firstItem="1fU-7j-v5k" firstAttribute="leading" secondItem="Arw-Qz-xii" secondAttribute="leading" constant="50" id="qvY-c2-K7d"/>
                             <constraint firstItem="LX2-tr-vnl" firstAttribute="top" secondItem="1fU-7j-v5k" secondAttribute="bottom" constant="30" id="vzh-9Q-P0X"/>
                             <constraint firstItem="WaH-IJ-rBE" firstAttribute="top" secondItem="LX2-tr-vnl" secondAttribute="bottom" constant="20" id="wJV-uQ-mke"/>
+                            <constraint firstItem="hyj-f9-CNY" firstAttribute="leading" secondItem="Arw-Qz-xii" secondAttribute="leading" id="zMt-z0-PJJ"/>
                             <constraint firstItem="Arw-Qz-xii" firstAttribute="trailing" secondItem="1fU-7j-v5k" secondAttribute="trailing" constant="50" id="zxb-Jb-ySz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myDatePickerView" destination="hyj-f9-CNY" id="3a0-gU-2Dz"/>
+                        <outlet property="myLabel" destination="ouj-eg-Bac" id="ULy-vj-bqA"/>
+                        <outlet property="myPickerView" destination="LX2-tr-vnl" id="BZD-7a-Pvc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3q8-9D-Efv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
+            <point key="canvasLocation" x="-858" y="63"/>
         </scene>
     </scenes>
     <resources>
