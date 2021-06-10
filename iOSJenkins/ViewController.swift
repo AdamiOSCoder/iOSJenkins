@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         
         myLabel.text = "fruit Label"
         timeLabel.text = "time Label"
+        myDatePicker.setDate(NSDate() as Date, animated: true)
         
         let alertView = UIAlertController.init(title: "テストbutton1", message: "aaaa", preferredStyle: .alert)
            let alert = UIAlertAction.init(title: "ok", style: .destructive) { (UIAlertAction) in
