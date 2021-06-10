@@ -10,8 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var myPickerView: UIPickerView!
-    @IBOutlet weak var myDatePickerView: UIDatePicker!
+    @IBOutlet weak var myDatePicker: UIDatePicker!
     
     let dummyList = ["Apple", "Orange", "Banana", "Mango", "Bilberry", "Blackberry"]
     
@@ -19,15 +20,29 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         myPickerView.delegate = self
         myPickerView.dataSource = self
-        myDatePickerView.datePickerMode = .date
+        myDatePicker.datePickerMode = .date
         
-        myDatePickerView.setDate(NSDate() as Date, animated: true)
-        myDatePickerView.minuteInterval = 5
-        myDatePickerView.minimumDate = NSDate(timeInterval: -93312000, since: NSDate() as Date) as Date
-        myDatePickerView.maximumDate = NSDate(timeIntervalSinceNow: 93312000) as Date
+        myDatePicker.setDate(NSDate() as Date, animated: true)
+        myDatePicker.minuteInterval = 5
+        myDatePicker.minimumDate = NSDate(timeInterval: -93312000, since: NSDate() as Date) as Date
+        myDatePicker.maximumDate = NSDate(timeIntervalSinceNow: 93312000) as Date
+        myDatePicker.addTarget(self, action: #selector(dateChange), for: UIControl.Event.valueChanged)
     }
 
+    
+    @objc func dateChange(datePicker:UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy年MM月dd日"
+        let date = myDatePicker.date
+        let dateText = formatter.string(from: date)
+        timeLabel.text = dateText
+    }
+    
     @IBAction func button1Click(_ sender: Any) {
+        
+        myLabel.text = "fruit Label"
+        timeLabel.text = "time Label"
+        
         let alertView = UIAlertController.init(title: "テストbutton1", message: "aaaa", preferredStyle: .alert)
            let alert = UIAlertAction.init(title: "ok", style: .destructive) { (UIAlertAction) in
             print("ok")
@@ -74,4 +89,5 @@ extension ViewController:UIPickerViewDelegate, UIPickerViewDataSource {
         myLabel.text = dummyList[row]
     }
 }
+
 
