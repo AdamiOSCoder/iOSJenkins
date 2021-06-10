@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         timeLabel.text = "time Label"
         myDatePicker.setDate(NSDate() as Date, animated: true)
         myPickerView.selectRow(0, inComponent: 0, animated: true)
-        myPickerView.reloadComponent(0)
+        myPickerView.reloadAllComponents()
         
         let alertView = UIAlertController.init(title: "テストbutton1", message: "aaaa", preferredStyle: .alert)
            let alert = UIAlertAction.init(title: "ok", style: .destructive) { (UIAlertAction) in
